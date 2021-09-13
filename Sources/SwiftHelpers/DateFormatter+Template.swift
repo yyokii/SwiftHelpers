@@ -3,7 +3,7 @@ import Foundation
 
 extension DateFormatter {
     // テンプレートの定義
-    enum Template: String {
+    public enum Template: String {
         case date = "yMd"     // 2017/1/1
         case time = "Hms"     // 12:39:22
         case full = "yMdkHms" // 2017/1/1 12:39:22
@@ -14,7 +14,7 @@ extension DateFormatter {
         case ISO8601withFractionalSeconds = "yyyy-MM-dd'T'HH:mm:ss.sssZ"
     }
 
-    func setTemplate(_ template: Template) {
+    public func setTemplate(_ template: Template) {
         // optionsは拡張用の引数だが使用されていないため常に0
         dateFormat = DateFormatter.dateFormat(fromTemplate: template.rawValue, options: 0, locale: .current)
     }

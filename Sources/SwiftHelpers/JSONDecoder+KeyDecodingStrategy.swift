@@ -2,7 +2,7 @@
 import Foundation
 
 extension JSONDecoder {
-    convenience init(type: JSONDecoder.KeyDecodingStrategy) {
+    public convenience init(type: JSONDecoder.KeyDecodingStrategy) {
         self.init()
         keyDecodingStrategy = type
     }

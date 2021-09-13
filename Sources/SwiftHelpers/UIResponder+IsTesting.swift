@@ -2,7 +2,7 @@
 import UIKit
 extension UIResponder {
 
-    func isTesting() -> Bool {
+    public func isTesting() -> Bool {
         return NSClassFromString("XCTest") != nil
     }
 }

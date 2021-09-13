@@ -4,7 +4,7 @@ protocol KeyNameSpaceable {
 }
 
 extension KeyNameSpaceable {
-    func namespaced<T: RawRepresentable>(_ key: T) -> String {
+    public func namespaced<T: RawRepresentable>(_ key: T) -> String {
         return "\(Self.self).\(key.rawValue)"
     }
 }
