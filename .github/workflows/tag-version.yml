@@ -3,7 +3,7 @@ name: add version tag
 on:
   pull_request:
     branches:
-      - master
+      - main
     types: [closed]
     
 jobs:
